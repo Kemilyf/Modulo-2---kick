@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const jogador=prompt("Qual seu nome?")
+        let op= 0
+        let cont= 0
+        let pontuacao=0
+        let resposta;
+        
+        quiz();
+
+        function final(){
+            alert(`${jogador}, você teve ${pontuacao} pontos`)
+                pontuacao=0
+        }
+        function respostafalsa(){
+            if (resposta=="falso"){
+                 pontuacao++
+                 alert("Resposta correta,PARABÉNS você ta indo bem....")
+            }
+            else{
+                alert(" Poxa!! Resposta incorreta....")
+            }
+           
+                
+             
+        }
+        function respostavdd(){
+            if (resposta=="verdadeiro"){
+                 pontuacao++
+                 alert("Resposta correta,PARABÉNS você ta indo bem....")   
+            } else{
+                alert(" Poxa!! Resposta incorreta....")
+            }
+                
+           
+        }
+        function quiz(op){
+        while(op!= 0){
+           op=parseInt(prompt("Qual tema você deseja jogar?\n 1-Futebol\n 2-Anime\n 3-Dorama\n 0- sair"))
+           switch(op){
+              case 1:
+                resposta=prompt("Brasil ganhou a copa de 2014.... verdadeiro ou falso")
+                respostafalsa();
+                resposta=prompt("Vasco é o melhor time do Brasil......verdadeiro ou falso")
+                respostavdd();
+                resposta=prompt("Neymar ganhou a bola de ouro em 2021....verdadeiro ou falso")
+                respostafalsa();
+                final();
+                break
+             case 0:
+                    alert("você saiu")
+                    break
+                default:
+                    alert("Digite uma opção válida..")
+                    break
+             case 2:
+                resposta=prompt("Naruto é neto do hashirama.... verdadeiro ou falso")
+                respostavdd();
+        
+                reposta=prompt("Gowter é humano.......verdadeiro ou falso")
+                respostavdd();
+            
+                resposta=prompt("O objetivo do Itadori é comer todos os 20 dedos e assim então morrer, levando o Sukuna consigo..... verdadeiro ou falso")
+                respostafalsa();
+                final();
+                break
+            case 3:
+                resposta=prompt("strong woman é sobre uma menina que não tem poderes.... verdadeiro ou falso")
+                respostafalsa();
+
+                reposta=prompt("Apesar de tudo amor é sobre um relacionamento saudavél entre duas pessoas.....verdadeiro ou falso")
+                respostafalsa();
+
+                resposta=prompt("Snowdrop tem como protagonista a cantora jisoo do grupo de kpo blackpink......verdadeiro ou falso")
+                respostavdd();
+                final();
+                break
+            }
+        }
+    }
+    
+    </script>
+</body>
+</html>
