@@ -1,0 +1,40 @@
+*{
+    
+   font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #fcfcfc;
+}
+
+
+h1{
+   color: #764e36;
+   font-size: 30px;
+   text-align: start;
+   margin: 0px;
+}
+hr{
+   border-color:#764e36;
+   
+ }
+ h2{
+    background-color:#764e36;
+    color:white;
+
+ }
+ 
+ fieldset{
+  border-color: #764e36;
+  border-width: 5px;
+  border-style:solid;
+  width: 50px;
+  height: 200px;
+  margin: 0px;
+  border-top:-15px;
+  padding-top: 0px;
+
+  }
+
+
+ 
